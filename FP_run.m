@@ -31,3 +31,7 @@ filenameSave = 'm149_2B3_SavedTest';
 full_path_Save = ['' pathSave filenameSave ''];
 
 save([full_path_Save '.mat'], 'Skel_map','Var_map', 'T_fibersLength', 'Tortuosity', 'Entropy_01', 'Entropy_10')
+
+%% Mean values per z-plane
+
+[Var_mean, Tortuosity_mean] = zplane_mean_parameter(Var_map, Tortuosity);
